@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body {
+    font-family: sans-serif;
+    background-image: url(images/model.jpg);
+    background-size: contain;
+    background-repeat: repeat-y;
+}
+header img.logo {
+    width: 16em;
+}
+header {
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    opacity: 0.9;
+    background-color: rgba(160, 157, 157, 0.438);
+}
+header div.section {
+    display: flex;
+}
+header ul {
+    display: flex;
+    list-style-type: none;
+}
+header li {
+    margin: 1em 0;
+    padding: 0 1em;
+    border-right: 2px solid black;
+}
+header li:last-child {
+    border-right-style: none;
+}
+header div.cart {
+    margin: 1em;
+}
+header a {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 0.9em;
+    font-weight: bold;
+}
+.welcome {
+    height: 100vh; 
+    width: 100vw;
+    background-image: url(images/superstar.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: auto;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.welcome h1 {
+    position: relative;
+    bottom: 30%;
+    text-transform: uppercase;
+    color: rgb(255, 255, 255);
+    font-size: 3em;
+    width: 50%;
+}
+.featured {
+    height: 100vh;
+    width: 50vw;
+    margin: 2em auto;
+    background-image: url(images/famous.jpg);
+    opacity: 0.8;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.featured h2, h3 {
+    text-transform: uppercase;
+    color: rgb(10, 253, 120);
+    margin: 0.5em 0; 
+    font-weight: bolder;
+    text-shadow: rgb(0, 0, 0);
+}
+.buy {
+    margin-top: 1em;
+    background-color: rgb(241, 12, 108);
+    padding: 0.2em 2em;
+    display: block;
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.product_list {
+    margin: auto;
+    display: grid;
+    width: 70vw;
+    height: 80vh;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.product {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-bottom: 2em;
+}
+img.product_image {
+    width: 70%;
+}
+.product_name {
+    margin-top: 0.5em;
+    color: black;
+}
+.product_price {
+    margin-top: 0.5em;
+    color: black;
+}
+.normal {
+    color: gray;
+    text-decoration: line-through;
+    padding-right: 0.3em;
+}
+.cart {
+    padding-right: 1em;
+}
+
+
